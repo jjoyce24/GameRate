@@ -47,5 +47,6 @@ end
 gem 'rails_12factor', group: :production
 gem 'carrierwave'
 gem "fog"
+gem "figaro"
 ruby "2.2.0"
 
