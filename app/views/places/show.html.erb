@@ -20,5 +20,7 @@
   <%= @place.website %>
 </p>
 
+<%= link_to "Write Review", new_place_review_path(@place), class: "btn btn-primary" %>
+
 <%= link_to 'Edit', edit_place_path(@place), class: "btn btn-link" %> |
 <%= link_to 'Back', places_path, class: "btn btn-link" %>
