@@ -23,7 +23,7 @@
         <td><%= place.name %></td>
         <td><%= place.address %></td>
         <td><%= place.phone %></td>
-        <td><%= place.website %></td>
+        <td><%= link_to place.website, place.website %></td> 
         <td><%= link_to 'Show', place, class: "btn btn-link" %></td>
         <td><%= link_to 'Edit', edit_place_path(place), class: "btn btn-link" %></td>
         <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
