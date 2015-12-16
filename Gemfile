@@ -49,5 +49,6 @@ gem 'carrierwave'
 gem "fog"
 gem "figaro"
 gem "mini_magick"
+gem 'devise'
 ruby "2.2.0"
 
