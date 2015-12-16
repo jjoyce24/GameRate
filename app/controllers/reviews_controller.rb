@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_place
   before_action :set_review, only: [:edit, :update, :destroy]
 
 
@@ -17,6 +18,7 @@ class ReviewsController < ApplicationController
   def create
     @review = Review.new(review_params)
     @review.user_id = current_user.id
+    @review.place_id = @place.id
 
     respond_to do |format|
       if @review.save
@@ -58,6 +60,10 @@ class ReviewsController < ApplicationController
     def set_review
       @review = Review.find(params[:id])
     end
+
+    def set_place
+  @place = Place.find(params[:place_id])
+end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def review_params
