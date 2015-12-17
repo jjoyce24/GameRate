@@ -1,28 +1,39 @@
-== README
+== GameRate
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project I created after GA WDI. A yelp clone for venues that have board games.
 
-Things you may want to cover:
+[Visit GameRate Here](https://fast-escarpment-3511.herokuapp.com/)
 
-* Ruby version
+Technologies I Used For This Project:
 
-* System dependencies
+* Ruby on Rails
 
-* Configuration
+* jQuery
 
-* Database creation
+* Bootstrap
 
-* Database initialization
+* PostgreSQL
 
-* How to run the test suite
+* Google Maps API
 
-* Services (job queues, cache servers, search engines, etc.)
+* Amazon S3
 
-* Deployment instructions
+* ElasticSearch
 
-* ...
+* CarrierWave 
+
+* Fog 
+
+* Figaro 
+
+* Mini_Magick
+
+* Devise
+
+* SearchKick
+
+* jQuery Raty
+
+* ImageMagick
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
