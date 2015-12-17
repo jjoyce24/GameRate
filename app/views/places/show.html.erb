@@ -62,7 +62,7 @@
 
 		          <% if user_signed_in? %>
 				  <% if (review.user == current_user) || (current_user.admin?) %>
-				    <%= link_to "Edit", edit_placet_review_path(@place, review) %>
+				    <%= link_to "Edit", edit_place_review_path(@place, review) %>
 				    <%= link_to "Delete", place_review_path(@place, review), method: :delete %>
 				  <% end %>
 				<% end %>
