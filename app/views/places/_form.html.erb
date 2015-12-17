@@ -1,7 +1,8 @@
 <%= form_for(@place, :html => { multipart: true }) do |f| %>
   <% if @place.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@place.errors.count, "error") %> prohibited this place from being saved:</h2>
+    <div id="error_explanation" class= "alert alert-danger alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <h4><%= pluralize(@place.errors.count, "error") %> prohibited this place from being saved:</h4>
 
       <ul>
       <% @place.errors.full_messages.each do |message| %>
@@ -13,23 +14,24 @@
 
   <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name, class: "form-control" %>
+    <%= f.text_field :name, class: "form-control", placeholder: "Game Board Place" %>
   </div>
   <div class="form-group">
     <%= f.label :address %><br>
-    <%= f.text_field :address, class: "form-control" %>
+    <%= f.text_field :address, class: "form-control", placeholder: "220 Pecan Street, Austin, TX 78701" %>
   </div>
   <div class="form-group">
     <%= f.label :phone %><br>
-    <%= f.text_field :phone, class: "form-control" %>
+    <%= f.text_field :phone, class: "form-control", placeholder: "(512) 327-7544" %>
   </div>
   <div class="form-group">
     <%= f.label :website %><br>
-    <%= f.text_field :website, class: "form-control" %>
+    <%= f.text_field :website, class: "form-control", placeholder: "http://www.gameplace.com/" %>
   </div>
   <div class="form-group">
     <%= f.label :image %><br>
-    <%= f.file_field :image, class: "form-control" %> 
+    <%= f.file_field :image, class: "form-control" %>
+  </div>
   <div class="actions">
     <%= f.submit class: "btn btn-primary" %>
   </div>
