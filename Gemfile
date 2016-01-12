@@ -51,5 +51,6 @@ gem "figaro"
 gem "mini_magick"
 gem 'devise'
 gem 'searchkick'
+gem 'will_paginate', '~> 3.0'
 ruby "2.2.0"
 

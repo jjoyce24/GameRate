@@ -35,6 +35,10 @@
 
 <br>
 
+<%= will_paginate @listings %>
+
+<br>
+
 <% if user_signed_in? && current_user.admin? %>
   <%= link_to 'New Place', new_place_path, class: "btn btn-link" %>
 <% end %>
